@@ -23,5 +23,6 @@ void main() {
     ..text('created_at').defaultsToCurrentTimestamp()
     ..text('level').check('level in ("warn", "info", "debug")');  
 
+
   print(builder.sql.join('\n\n'));
 }

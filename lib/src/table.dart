@@ -55,6 +55,6 @@ class Table {
     String? name,
     bool unique = false,
   }) {    
-    indexes.add(Index(field: field, fields: fields, name: name, unique: unique,));
+    indexes.add(Index(table: this, field: field, fields: fields, name: name, unique: unique,));
   }
 }

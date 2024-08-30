@@ -161,8 +161,8 @@ void main() {
     });
     test('Can limit to string values', () {
       Builder builder = Builder();
-      Table table = builder.table('entries')..integer('level').restrictTo(["warn", "debug", "info"]);
-      expect(table.fields.first.definition, 'level INTEGER CHECK(level IN ("warn", "debug", "info"))');
+      Table table = builder.table('entries')..text('level').restrictTo(["warn", "debug", "info"]);
+      expect(table.fields.first.definition, 'level TEXT CHECK(level IN ("warn", "debug", "info"))');
     });
   });
 }
