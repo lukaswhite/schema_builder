@@ -1,0 +1,1 @@
+class InvalidDefault extends Error {}

@@ -1,0 +1,1 @@
+class DuplicateField extends Error {}

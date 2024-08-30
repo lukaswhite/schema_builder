@@ -1,0 +1,1 @@
+class PrimaryKeyAlreadyDefined extends Error {}
